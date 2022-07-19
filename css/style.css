@@ -1,0 +1,281 @@
+/*Le asigno a todo el documento la fuente elegida*/
+html{
+    font-family: 'Libre Baskerville', serif;
+   
+}
+
+/*Reseteo los valores */
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/22/11/10/box-1472804_960_720.png");
+   
+}
+/*Le pego modificaciones al header que tiene su clase*/
+.header-container{
+    
+    display: flex;
+    align-items: center;
+    border: #000;
+    
+}
+
+.logo{
+
+   
+padding-left: 45px;
+padding-top: 20px;   
+}
+
+.logo-container{
+    display: flex;
+    width:500px;
+    height: 160px;
+   
+    justify-content: center;
+   
+}
+.header-derecha{
+   
+    display: flex;
+   
+    flex-direction: column;
+    letter-spacing: 15px;
+   width: 100%;
+   height: 160px;
+   align-items: center;  
+   
+   justify-content: space-between;
+
+}
+.principal{
+ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*NAV*/
+header nav ul li {
+   list-style-type: none;
+   text-align:center;
+   display: inline;
+   
+    
+}
+a{
+    text-decoration: none;
+    
+}
+
+.acerca{
+    letter-spacing: normal;
+    margin-right: 200px;
+    font-size: 30px;
+}
+.contacto{
+    letter-spacing: normal;
+    font-size: 30px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    
+    font-size: 35px;
+    color: rgb(3, 35, 54);
+    border-bottom: 8px ;
+    margin-top: 40px;
+}
+h4{
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.articulos{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 100%;
+  
+    flex-wrap: wrap;
+    
+    
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: rgb(0, 0, 0, .4);
+    text-align: center;
+
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.card .back .link{
+    border-top: solid 1px white;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+
+}
+p{
+    font-size: 14.8px;
+}
+
+.trailer{
+    color: white;
+    margin-bottom: 0px;
+}
+
+.card .back h3{
+    font-size: 25px;
+    margin-top: 1px;
+    letter-spacing: 2px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*FOOTER GRID CONTAINER*/
+.grid-container{
+    background-image:url(/imagenes/BANNERSMALLWEB.jpg);
+    display: grid;
+    align-content: center;
+    margin-left: 12rem;
+margin-bottom: 6rem;
+    font-size: 2rem;
+    text-align: center;
+    width: 1000px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "titulo titulo titulo titulo titulo titulo"
+    "facebook twitter instagram whatsapp linkedin youtube"
+    "facebook twitter instagram whatsapp linkedin youtube"
+    "facebook twitter instagram whatsapp linkedin youtube"
+    "facebook twitter instagram whatsapp linkedin youtube"
+    "facebook twitter instagram whatsapp linkedin youtube"
+    ;
+   
+}
+
+.titulo-redes{
+    grid-area: titulo;
+   
+
+}
+
+.facebook{
+    grid-area: facebook;
+    font-size: 4rem;
+}
+
+.twitter{
+    grid-area: twitter;
+    font-size: 4rem;
+   
+}
+.instagram{
+    grid-area: instagram;
+    font-size: 4rem;
+  
+}
+.whatsapp{
+    grid-area: whatsapp;
+    font-size: 4rem;
+ 
+}
+.linkedin{
+    grid-area: linkedin;
+    font-size: 4rem;
+   
+}
+.youtube{
+    grid-area: youtube;
+    font-size: 4rem;
+    color: red;
+    
+    
+}
+.animate__slow {
+    --animate-duration: 3.5s;
+  }
+
+  .bxl-facebook-circle{
+    color: rgb(21, 4, 247);
+  }
+
+  .bxl-twitter{
+    color: rgb(43, 180, 243);
+  }
+
+  .bxl-instagram{
+    color: rgb(245, 6, 57);
+  }
+  .bxl-whatsapp{
+    color: rgb(6, 245, 78);
+
+  
+}
+
+.bxl-linkedin{
+    color: rgb(6, 10, 245);
+  }
+  .bxl-youtube{
+    color: rgb(255, 4, 4);
+  }
+
+  .ap{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 40px;
+  }
