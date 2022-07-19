@@ -337,3 +337,11 @@ justify-content: center;
     justify-content: center;
 
   }
+
+  .pabout{
+    font-size: 20px;
+    text-shadow: none;
+    color: black;
+    width: 60ch;
+    
+  }
