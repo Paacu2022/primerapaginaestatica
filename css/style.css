@@ -19,7 +19,7 @@ body{
 .header-container{
     
     display: flex;
-    background-color: aqua;
+   
     height: 200px;
     
 }
@@ -39,11 +39,11 @@ padding-top: 20px;
     width:500px;
     height: 200px;
     justify-content: center;
-    background-color: yellow;
+    
    
 }
 .header-derecha{
-   background-color: darkgreen;
+ 
     display: flex;
    
     flex-direction: column;
@@ -60,52 +60,47 @@ padding-top: 20px;
     text-align: center;
     color: white;
     text-shadow: 3px 3px black;
-    background-color: #eb8ee3;
+ 
 }
-/*NAV*/
-ul li {
-   list-style-type: none;
-   text-align:center;
-   display: inline;
-   
-    
-}
+
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(28, 12, 243);
     text-shadow: 3px 3px black;
     margin: 0;
+    font-weight: bold;
   
     
 }
 .acerca-contacto{
     display: flex;
-    background-color: rgb(94, 10, 189);
+    text-shadow: none;
     height: 100px;
-    width: 900px;  
+    width: 900px; 
+    justify-content: center;
+    padding-bottom: 50px;
+  
 }
 .ap{
-    margin-top: 20px;
+    margin-top: 40px;
     height: 100px;
 }
 .acerca{
-  
+    text-shadow: none;
     width: 80px;
-    background-color: #ca5d87;
-    padding-right: 0px;
-    padding-left: 0px;
+  
+   
 }
 .contacto{
     width: 80px;
-    background-color: rgb(8, 252, 130);
-    padding-left: 0px;
-    padding-right: 0px;
-    
+ 
+   
 }
 
 .principal{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 h1{
     
@@ -132,6 +127,9 @@ h4{
     flex-wrap: wrap;
     
     
+}
+figcaption{
+    text-shadow: 0px 0px;
 }
 .card{
     position: relative;
@@ -349,6 +347,7 @@ justify-content: center;
   .ancor{
     display: flex;
     justify-content: center;
+
 
   }
 
