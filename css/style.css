@@ -404,7 +404,10 @@ justify-content: center;
     display: flex;
     justify-content: center;
   }
-    /* media queries*/
+  .contac-about{
+    display: flex;
+  }
+    /* MEDIA QUERY CELULAR*/
 
 @media screen and (max-width: 576px){
 
@@ -436,9 +439,7 @@ justify-content: center;
     padding: 2rem;
 }
 
-.contacto{
-    
-}
+
 
 .acerca, .contacto{
     width: 8rem;
@@ -457,5 +458,135 @@ justify-content: center;
     ;
    
 }
+.contac-about{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+.pabout{
+    font-size: 20px;
+    text-shadow: none;
+    color: black;
+    letter-spacing: 0ch;
+    width: 95vw;
+
+}
+
+
+.yo{
+    width: 65%;
+}
+
+.contac{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+}
+/*MEDIA QUERY TABLETS*/
+@media screen and (min-width:577px)and (max-width:768px) {
+    .grid-container{
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "titulo"
+        "facebook"
+        "twitter"
+        "whatsapp"
+        "linkedin"
+        "youtube"
+        ;    
+    }
+    .contac{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .formulario{
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    .header-container{
+        flex-direction: column;
+      
+        align-items: center;
+        width: 576px;
+    
+    }
+    .logo{
+        width: 25vw;
+     
+    }
+    
+    .ap{
+        height: 10vw;
+        letter-spacing:2vh;
+         
+    }
+    
+    .acerca-contacto{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 18rem;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    
+    
+    .acerca, .contacto{
+        width: 8rem;
+    }
+    
+    .contac-about{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .pabout{
+        font-size: 20px;
+        text-shadow: none;
+        color: black;
+        letter-spacing: 0ch;
+        width: 95vw;
+    
+    }
+    
+    
+    .yo{
+        width: 65%;
+    }
+    
+    .contac{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:769px) {
+    
 }
 
