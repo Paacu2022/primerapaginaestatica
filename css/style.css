@@ -43,14 +43,15 @@ padding-top: 20px;
    
 }
 .header-derecha{
- 
+
     display: flex;
    
     flex-direction: column;
    
-   width: 100%;
-   height: 100px;
- align-items:center; 
+   width: 100vw;
+   height: 100hv;
+
+ align-self: center;
    
 }
 .principal{
@@ -60,7 +61,8 @@ padding-top: 20px;
     text-align: center;
     color: white;
     text-shadow: 3px 3px black;
- 
+    width: 100vw;
+
 }
 
 a{
@@ -76,15 +78,21 @@ a{
     display: flex;
     text-shadow: none;
     height: 100px;
-    width: 900px; 
+    width: 100vw; 
     justify-content: center;
-    padding-bottom: 50px;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 0px;
+   
     
   
 }
 .ap{
     margin-top: 40px;
     height: 100px;
+    align-items: center;
+    align-self: center;
+    
 }
 .acerca{
     text-shadow: none;
@@ -101,7 +109,7 @@ a{
 .principal{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 h1{
     
@@ -110,10 +118,11 @@ h1{
     border-bottom: 0px ;
     margin-top: 0px;
     text-shadow: 3px 3px black;
+ 
   
 }
 h4{
-  
+
   font-size: 18px;
   color: white;
   text-shadow: 2px 2px black;
@@ -217,14 +226,14 @@ p{
 
 /*FOOTER GRID CONTAINER*/
 .grid-container{
-    background-image:url(/imagenes/BANNERSMALLWEB.jpg);
+    
     display: grid;
     align-content: center;
-    margin-left: 12rem;
+   
 margin-bottom: 6rem;
     font-size: 2rem;
     text-align: center;
-    width: 1000px;
+    width: 100vw;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
@@ -242,7 +251,8 @@ margin-bottom: 6rem;
     grid-area: titulo;
     color: white;
     text-shadow: 2px 2px black;
-   
+   width: 100vw;
+   justify-content: center;
 
 }
 
@@ -394,3 +404,58 @@ justify-content: center;
     display: flex;
     justify-content: center;
   }
+    /* media queries*/
+
+@media screen and (max-width: 576px){
+
+    .header-container{
+    flex-direction: column;
+  
+    align-items: center;
+    width: 576px;
+
+}
+.logo{
+    width: 25vw;
+ 
+}
+
+.ap{
+    height: 10vw;
+    letter-spacing:2vh;
+     
+}
+
+.acerca-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 18rem;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contacto{
+    
+}
+
+.acerca, .contacto{
+    width: 8rem;
+}
+.grid-container{
+   
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "titulo"
+    "facebook"
+    "twitter"
+    "whatsapp"
+    "linkedin"
+    "youtube"
+    ;
+   
+}
+}
+
